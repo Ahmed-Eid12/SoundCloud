@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**
+ * for my audio if i wanna to update or anything else ...
+ */
+.audio-sty{
+    width: 100%;
+}

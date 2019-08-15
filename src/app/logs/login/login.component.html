@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="back-img">
+    <div class="content">
+      <div class="header">
+        <i [routerLink]="['/music']" class="fas fa-headphones"></i>
+        <a [routerLink]="['/music']" class="navbar-brand">Music</a>
+      </div>
+      <div class="login">
+        <div class="login-content">
+          <h1>Welcome To <span>Music World</span></h1>
+        <small>We make it easy for everyone to invest in real estate</small>
+        <form [formGroup]="formGroup" class="form-group">
+          <input formControlName="email" type="text" class="form-control e-email" placeholder="Email">
+          <p *ngIf="formGroup.get('email').touched && formGroup.get('email').errors?.required" id="email">email error<i class="fas fa-caret-right"></i></p>
+          <input formControlName="password" type="password" class="form-control e-pass" placeholder="Password">
+          <p *ngIf="formGroup.get('password').touched && formGroup.get('password').errors?.required" id="pass">password error<i class="fas fa-caret-right"></i></p>
+          <input type="checkbox" value="OK"> Remember me.
+          <h4>forget password</h4>
+        </form>
+        <button class="login-btn" (click)="login()" [routerLink]="['/music']">Login</button>
+        <button class="register" [routerLink]="['/register']">register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

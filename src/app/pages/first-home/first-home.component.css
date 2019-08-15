@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-content{
+    background-color: #3B4F51;
+    background-color: transparent;
+    position: relative;
+}
+.container-fluid{
+    background: url('/assets/img-pic/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.container-fluid::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+.text-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: calc( 50% - 100px );
+    z-index: 1;
+}
+.login, .register{
+    padding: 15px 40px;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+    outline: none;
+}
+.login{
+    background: #EE7560;
+    color: white;
+    border-radius: 15px;
+}
+.login:hover{
+    background: rgb(238, 151, 135);
+}
+.register{
+    background: #3B4F51;
+    color: white;
+    border-radius: 15px;
+}
+.register:hover{
+    background: rgb(102, 134, 136);
+}
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    position: relative;
+}
+.logo{
+    padding: 20px 15px;
+}
+a{
+    color: #EE7560;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    position: relative;
+}
+.service{
+    margin-left: 20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding: 20px 30px;
+   
+}
+li{
+    padding: 5px 25px;
+    margin-left: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #EE7560;
+    transition: .5s all ease;
+}
+li:nth-child(1){
+    border-radius: 10px;
+    background-color: white;
+}
+li:nth-child(2):hover{
+    
+    border-radius: 10px;
+    background-color: white;
+}
+li:nth-child(3):hover{
+    
+    border-radius: 10px;
+    background-color: white;
+}
+li:nth-child(5):hover{
+    
+    border-radius: 10px;
+    background-color: white;
+}
+i{
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}

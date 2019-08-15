@@ -1,0 +1,40 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+/* .container{
+    background-color: rgb(133, 133, 133);
+} */
+
+img{
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 5px 20px 15px rgb(122, 122, 122);
+}
+.home-content{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.page-info{
+    margin-left: 25px;
+}
+.btn{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    right: -20px;
+    top: 20px;
+    width: 300px;
+    background-color: crimson;
+}
+h3{
+    color: crimson;
+    position: relative;
+    top: 50px;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 150px;
+    border-radius: 10px;
+}
+.singer-info{
+    display: flex;
+    margin-top: 20px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 10px 10px 20px rgb(141, 141, 141);
+}
+.info{
+    margin-left: 25px;
+}
+h3{
+    color: crimson;
+    font-size: 30px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+}

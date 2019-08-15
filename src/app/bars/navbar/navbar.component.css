@@ -1,0 +1,23 @@
+.fa-headphones{
+    color: white;
+    margin-right: 2px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.bar-contain{
+    cursor: pointer;
+}
+.navbar-brand{
+    color: tomato;
+    font-weight: bold
+}
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+li:nth-child(3){
+    display: flex;
+    margin: 0 0 0 10px;
+}

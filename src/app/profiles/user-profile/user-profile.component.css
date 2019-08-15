@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a.logout{
+    text-align: right;
+    color: blue;
+    cursor: pointer;
+}
+.cover-pic{
+    text-align: center;
+    background: #3F464D;
+    padding: 1px;
+}
+.img{
+    margin-top: 50px;
+}
+img{
+    margin-top: 30px;
+    border-radius: 50%;
+}
+h4{
+    margin: 10px 20px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding: 20px;
+}
+h4:nth-child(2){
+    margin-bottom: 50px;
+}
+.user-content{
+    margin-top: 70px;
+    padding: 20px;
+}
+.follow,.chat{
+    padding: 20px 40px;
+    border: none;
+    margin: 20px;
+    border-radius: 10px;
+}
+.follow{
+    background-color: #3F464D;
+    color: white;
+}
+.follow:hover{
+    background-color: rgb(84, 93, 102);
+}
+.chat{
+    background-color: tomato;
+    color: white;
+}
+.chat:hover{
+    background-color: rgb(255, 140, 119);
+}

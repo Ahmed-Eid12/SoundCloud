@@ -1,0 +1,28 @@
+<div class="navbar-content">
+  <div class="container-fluid">
+    <div class="contents">
+    <div [routerLink]="['/']"  class="bar-contain logo">
+      <i [routerLink]="['/']" class="fas fa-headphones"></i>
+      <a [routerLink]="['/']" class="navbar-brand">Music</a>
+    </div>
+    <div class="navbar-services service">
+      <ul>
+        <li [routerLink]="['/']">HOME</li>
+        <li [routerLink]="['/singersPlayList']">SINGERS</li>
+        <li [routerLink]="['/login']">LOGIN</li>
+        <li>|</li>
+        <li [routerLink]="['/register']">REGISTER</li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-content">
+    <div class="h1">
+        <h1>OUR MUSIC</h1>
+    </div>
+    <div class="btnss">
+        <button class="login" [routerLink]="['/login']">Login</button>
+        <button class="register" [routerLink]="['/register']">Register</button>
+    </div>
+  </div>
+</div>
+</div>

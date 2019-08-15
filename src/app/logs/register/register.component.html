@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="back-img">
+    <div class="content">
+      <div class="header">
+        <i [routerLink]="['/music']" class="fas fa-headphones"></i>
+        <a [routerLink]="['/music']" class="navbar-brand">Music</a>
+      </div>
+      <div class="login">
+        <div class="login-content">
+          <h1>Register for <span>Music World</span></h1>
+        <small>let us some informations about you to conplete your register</small>
+        <form [formGroup]="formGroup" >
+          <input formControlName="userName" type="text" class="form-control user" placeholder="User Name">
+          <p *ngIf="formGroup.get('userName').touched && formGroup.get('userName').errors?.required" id="user">user name error<i class="fas fa-caret-right"></i></p>
+          <input formControlName="email" type="text" class="form-control" placeholder="Email">
+          <p *ngIf="formGroup.get('email').touched && formGroup.get('email').errors?.required" id="email">email error<i class="fas fa-caret-right"></i></p>
+          <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block">
+                <select class="dorp-down" formControlName="singer" id="dropdownBasic1" ngbDropdownToggle>
+                <!-- <div ngbDropdownMenu aria-labelledby="dropdownBasic1"> -->
+                  <option disabled >Select Singer</option>
+                  <option ngbDropdownItem>Mohamed Hamaky</option>
+                  <option ngbDropdownItem>Tamer Ashor</option>
+                  <option ngbDropdownItem>Elissa</option>
+                <!-- </div> -->
+                </select>
+              </div>
+            </div>
+            </div>
+
+          <input formControlName="password" type="password" class="form-control e-pass" placeholder="Password">
+          <p *ngIf="formGroup.get('password').touched && formGroup.get('password').errors?.required" id="pass">password error<i class="fas fa-caret-right"></i></p>
+          <input formControlName="confirmPassword" type="password" class="form-control" placeholder="Confirm Password">
+          <p *ngIf="formGroup.get('confirmPassword').touched && formGroup.get('confirmPassword').errors?.required" id="pass2">not matched<i class="fas fa-caret-right"></i></p>
+          <input type="checkbox" value="OK"> I Agree to the Terms and Conditions
+        </form>
+        <small>Basck to <a [routerLink]="['/login']">login</a> please :)</small>
+        <button class="register" (click)="saveUser()">register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

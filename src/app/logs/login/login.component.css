@@ -1,0 +1,135 @@
+.content{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.back-img{
+    position: relative;
+    top: 50px;;
+    border-radius: 20px;
+}
+.back-img{
+    background: url('/assets/img-pic/2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 600px;
+    box-shadow: 15px 15px 20px #3B4F51;
+}
+.form-control.e-email{
+    margin-bottom: 5px;
+}
+.back-img::after{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+    border-radius: 20px;
+}
+/**validation */
+form{
+    position: relative;
+}
+#email{
+    margin: 10px 0;
+    color: #EE7560;
+    position: absolute;
+    display: inline-block;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    left: -143px;
+    top: -26px;
+    border-radius: 10px;
+}
+#pass{
+    margin: 10px 0;
+    color: #EE7560;
+    position: absolute;
+    display: inline-block;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    left: -171px;
+    top: 30px;
+    border-radius: 10px;
+}
+.ng-touched.ng-invalid{
+    border-color: #EE7560
+}
+.fa-caret-right{
+    position: relative;
+    right: -29px;
+}
+
+/**end validation */
+small{
+    margin: 0;
+    margin-bottom: 10px;
+    color: rgb(156, 164, 165);
+}
+span{
+    color: #EE7560;
+}
+.content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.login{
+    background: rgba(255,255,255,.8);
+    border-radius: 20px;
+    margin: 50px 30px;;
+    border: 1px solid #EE7560;
+}
+.header{
+    margin-top: 50px;
+}
+a{
+    color: #EE7560;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    position: relative;
+}
+i{
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+p{
+    margin: 10px 0;
+    color: #EE7560;
+}
+.login-content{
+    margin: 30px;
+}
+.login-btn, .register{
+    padding: 15px 40px;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+    outline: none;
+}
+.login-btn{
+    background: #EE7560;
+    color: white;
+    border-radius: 15px;
+}
+.login-btn:hover{
+    background: rgb(238, 151, 135);
+}
+.register{
+    background: #3B4F51;
+    color: white;
+    border-radius: 15px;
+}
+.register:hover{
+    background: rgb(102, 134, 136);
+}

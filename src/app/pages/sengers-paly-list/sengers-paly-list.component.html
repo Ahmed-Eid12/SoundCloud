@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="singers-content">
+        <div *ngFor="let singer of singers" class="singer-info">
+          <div class="imgs">
+              <img src="{{singer.img}}">
+          </div>
+          <div class="info">
+              <h3>{{singer.name}}</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque libero</p>
+              <h5>{{singer.nationality}}</h5>
+              <small><a [routerLink]="['/songPlayList',singer.name]">playList</a></small>
+          </div>
+        </div>
+      </div>
+</div>
